@@ -1,213 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vinay portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 100px;
-        background-color: rgb(35, 35, 84);
-      }
-      nav ul {
-        display: flex;
-        justify-content: center;
-      }
-      nav ul li {
-        list-style: none;
-        margin: 0 23px;
-      }
-      body {
-        background-color: rgb(255, 255, 255);
-        color: white;
-        font-family: "poppins", sans-serif;
-      }
-      .left {
-        font-size: 1.5rem;
-      }
-      .firstSection {
-        display: flex;
-        justify-content: space-around;
-        margin: 145px 0;
-      }
-      .firstSection > div {
-        width: 40%;
-      }
-      .leftSection {
-        font-size: 3rem;
-        margin: 150px 0;
-        color: black;
-      }
-      .rightSection {
-        margin: 10px 0;
-        padding: 20px 0;
-      }
-      .purple {
-        color: rgb(132, 0, 255);
-      }
-      nav ul li a {
-        text-decoration: none;
-        color: rgb(254, 254, 254);
-      }
-      nav ul li a:hover {
-        color: yellow;
-        font-size: 1.05rem;
-      }
-      #element {
-        color: blueviolet;
-      }
-      .lang {
-        color: blueviolet;
-        font-size: 4rem;
-      }
-      .secondSection {
-        max-width: 80vw;
-        margin: auto;
-        color: black;
-      }
-      main hr {
-        border: 0;
-        background: blueviolet;
-        height: 1.2px;
-        margin: 40px 84px;
-      }
-      .secondSection h1 {
-        font-size: 1.9rem;
-      }
-      .text-gray {
-        color: blueviolet;
-      }
-      .secondSection .timeline {
-        background: blueviolet;
-        width: 80vw;
-        height: 2px;
-        margin: 56px 0;
-        display: flex;
-      }
-      .secondSection .verticle {
-        height: 93px;
-        width: 1px;
-        background-color: blueviolet;
-        margin: 0 100px;
-      }
-      .bottom .bottom{
-        color: white;
-        display: flex;  
-        position: absolute;
-        right: 90%;
-        font-size:large;
-       margin: auto;
-      }
-      .bottom-nav .nav-item:hover{
-        color: yellow;
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vinay Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+  rel="stylesheet"
+/>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    line-height: 1.6;
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(35, 35, 84);
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin-right: 15px;
+  }
+  nav ul li {
+    margin: 0 20px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+   
+  }
+  nav ul li a:hover {
+    color: yellow;
+  }
+  main {
+    padding-top: 80px;
+  }
+  .firstSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  .leftSection {
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+  .leftSection h1 .purple{
+    color: blueviolet;
+  }
+  .leftSection h1 {
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    font-weight:500;
+  }
+  .leftSection .lang {
+    font-size: 2.5rem;
+    color: blueviolet;
+  }
+  .rightSection {
+    max-width: 100%;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 30px 0;
+    text-align: center;
+  }
+  .slideshow-container {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  .slideshow-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .slideshow-container img.active {
+    opacity: 1;
+  }
+  .slideshow-controls {
+    margin-top: 10px;
+  }
+  .slideshow-controls button {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  .slideshow-controls button:hover {
+    background-color: rgb(110, 0, 255);
+  }
+  .slideshow-controls button.active {
+    background-color: rgb(110, 0, 255);
+  }
+  hr {
+    border: 0;
+    background-color: blueviolet;
+    height: 1px;
+    margin: 20px 0;
+    
+   
+  }
+  .bottom {
+    background-color: rgb(35, 35, 84);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .bottom-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 10px 0;
+  }
+  .bottom-nav ul li {
+    margin: 0 10px;
+  }
+  .bottom-nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .bottom-nav ul li a:hover {
+    color: yellow;
+  }
+  h2{
+ margin: auto;
+  }
+  u{
+    color: blueviolet;
+    font-weight: bold;
+  }
+  #element{
+    color: blueviolet;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+</style>
+</head>
+<body>
+<header>
+  <nav>
+    <div class="left"><b>Vinay Portfolio</b></div>
+    <div class="right">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="mailto:vinaysinghtilada@gmail.com">Contact Me</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<main>
+  <section class="firstSection">
+    <div class="leftSection">
+      <h1>Hi, My Name is <span class="purple">Vinay</span></h1>
+      <div>And I am an Aspiring <span class="lang">Go</span> Lang Developer &</div>
+      <span id="element"></span>
+    </div>
+    <div class="rightSection">
+      <script
+        src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+        type="module"
+      ></script>
+      <dotlottie-player
+        src="https://lottie.host/67d6d33c-6419-450d-a2da-061f4ebf6820/BdhWlkLWHd.json"
+        background="transparent"
+        speed="0.5"
+        style="width: 100%; height: auto"
+        loop
+        autoplay
+      ></dotlottie-player>
+    </div>
+  </section>
+  <hr />
+  <section id="about" class="about-section">
+    <div class="slideshow-container">
+      <img class="mySlides active" src="./img/IMG20240608192530.jpg" alt="Image 1">
+      <img class="mySlides" src="./img/1000006442-01.jpeg" alt="Image 2">
+      <img class="mySlides" src="./img/IMG_0722.JPG" alt="Image 3">
+      <img class="mySlides" src="./img/IMG_0726.JPG" alt="Image 4">
+      <img class="mySlides" src="./img/IMG_20240319_192752.jpg" alt="Image 5">
+      <img class="mySlides" src="./img/LRM_20231028_180619.jpg" alt="Image 6">
+    </div>
+    <div>
+      <h2>About Me</h2>
+      <p>
+        Hi! I am Vinay Tilada, currently pursuing a Bachelor's degree in Computer Applications (BCA) at <u>Somaiya Vidyavihar University</u>, specializing in Information Technology with a focus on <u>Computer Networking, Computing, Embedded Systems, and Cloud Computing.</u>
+        
+        My journey in technology began with a deep-seated passion for coding and creating, which led me to explore various programming languages and intricate network architectures. Beyond academics, I am actively involved in <u>Corporate Social Responsibility (CSR)</u> initiatives as a CSR Executive  at Bio-Riidl in Mumbai, Maharashtra.
+        
+        With hands-on experience and certifications in <u>Google Cloud, AWS, and IBM</u> from Coursera, I am dedicated to leveraging technology to address societal challenges and drive positive change. I bring a blend of technical expertise, professionalism, and a collaborative mindset to every project.
+        
+        Thank you for visiting my profile. Let's connect and explore opportunities to collaborate and innovate together!
 
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="left"><b>Vinay Portfolio</b></div>
-        <div class="right">
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Project</a></li>
-            <li><a href="mailto:vinaysinghtilada@gmail.com">Contact Me</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <section class="firstSection">
-        <div class="leftSection">
-          Hi My Name is <span class="purple"> <b>Vinay</b> </span>
-          <div>And I am a <span class="lang"> Go </span>Lang developer</div>
-          <span id="element"></span>
-        </div>
-        <div class="rightSection">
-          <script
-            src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
-            type="module"
-          ></script>
+        </p>
+    </div>
+  </section>
+</main>
+<footer class="bottom">
+  <div class="bottom-nav">
+    <ul>
+      <li><a href="https://www.linkedin.com/in/vinaytilada/" target="_blank">LinkedIn</a></li>
+      <li><a href="https://github.com/MightyAcE58" target="_blank">GitHub</a></li>
+      <li><a href="https://drive.google.com/drive/folders/1AfzUtkVyPqwCgT5t_ejM_aOvHBy_riND?usp=sharing" target="_blank">Resume</a></li>
+    </ul>
+  </div>
+</footer>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+  var typed = new Typed("#element", {
+    strings: [
+      "Cloud Developer.",
+      "Cloud Solutions.",
+      "Cloud Admin.",
+      "DevOps.",
+    ],
+    typeSpeed: 50,
+    loop: true
+  });
+</script>
+<script>
+  var slideIndex = 0;
+  carousel();
 
-          <dotlottie-player
-            src="https://lottie.host/67d6d33c-6419-450d-a2da-061f4ebf6820/BdhWlkLWHd.json"
-            background="transparent"
-            speed="0.5"
-            style="width: 800px; height: 500px"
-            loop
-            autoplay
-          ></dotlottie-player>
-        </div>
-      </section>
-      <hr />
-      <section class="secondSection">
-        <span class="text-gray">What I have Done so far</span>
-        <h1> Technologies I am interested</h1>
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-       
-      </section>
-      <section class="bottom">
-        <div class="bottom-nav">
-          <nav class="navbar sticky-bottom bg-body-tertiary">
-            <div class="container-fluid">
-              <span class="bottom">Vinay Portfolio</span> 
-              <ul class="nav justify-content-end">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Linkedin</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">GitHub</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">X</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" aria-disabled="false">Resume</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </section>
-    </main>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Setup and start animation! -->
-    <script>
-      var typed = new Typed("#element", {
-        strings: [
-          "Cloud Developer.",
-          "Cloud Solutions.",
-          "Cloud Admin.",
-          "DevOps.",
-        ],
-        typeSpeed: 50,
-      });
-    </script>
-  </body>
+  function carousel() {
+    var slides = document.getElementsByClassName("mySlides");
+    for (var i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(carousel, 3000); // Change image every 3 seconds
+  }
+</script>
+</body>
 </html>
