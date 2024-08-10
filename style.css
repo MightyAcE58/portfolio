@@ -163,11 +163,13 @@
     font-weight: 500;
   }
   .card {
-    border-radius: 15px;
+    border-radius: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     transition: transform 0.2s, background-color 0.3s, color 0.3s, box-shadow 0.3s;
-    width: 18rem; /* Set the width */
+    width: 18rem;
+    padding-bottom: 4rem;
+    margin-bottom: 3rem;
   }
 
   .card:hover {
