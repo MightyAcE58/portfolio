@@ -176,7 +176,10 @@
     transform: scale(1.05);
     background-color: #f8f9fa; /* Light background color on hover */
     color: #343a40; /* Dark text color on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 123, 255, 0.5); /* Glow effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 0 20px blueviolet; /* Glow effect */
+    color: rgb(130, 4, 248);
+    text-transform: none;
+    text-decoration: wavy;
   }
 
   .card-img-top {
@@ -200,7 +203,7 @@
   }
 
   .btn-primary {
-    background-color: #007bff; /* Primary button background color */
+    background-color: #0044ffb7; /* Primary button background color */
     border: none;
     padding: 10px 20px; /* Button padding */
     border-radius: 5px; /* Rounded corners for the button */
@@ -211,5 +214,18 @@
   }
 
   .btn-primary:hover {
-    background-color: #0056b3; /* Darker button background color on hover */
+    background-color: blueviolet; /* Darker button background color on hover */
   }
+  .border {
+    border: 2px solid blueviolet; /* Blueviolet border */
+    border-radius: 10px;          /* Rounded corners */
+    padding: 20px;                /* Padding inside the border */
+    margin: 10px 10px;            /* Margin on both sides, centering the div */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3), 0 0 20px; /* Shadow effect */
+    max-width: 1000px;             /* Optional: limits the width of the div */
+}
+.border:hover{
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 0 20px blueviolet; /* Glow effect */
+  transform: scale(1.03);
+  
+}
